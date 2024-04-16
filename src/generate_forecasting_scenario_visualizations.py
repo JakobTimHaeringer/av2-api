@@ -89,16 +89,12 @@ def generate_scenario_visualizations(
     required=True,
     help="Path to local directory where Argoverse scenarios are stored.",
     type=click.Path(exists=True),
-    # Set the default value here
-    default='C:/Users/HAJ3ST/Documents/00_Github_Repos/Masterthesis/av2-api/src/valid/0a0f2def-7978-40d8-b221-695633a8c1b8'
 )
 @click.option(
     "--viz-output-dir",
     required=True,
     help="Path to local directory where generated visualizations should be saved.",
     type=click.Path(),
-    # Set the default value here
-    default='C:/Users/HAJ3ST/Documents/00_Github_Repos/Masterthesis/av2-api'
 )
 @click.option(
     "-n",
