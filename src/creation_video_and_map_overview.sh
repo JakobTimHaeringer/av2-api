@@ -5,25 +5,25 @@ conda activate /home/haj3st/miniconda3/envs/av2/envs/av2
 echo "Creating map overview and scenario video visualisation!"
 
 # Dataroot
-dataroot='/mnt/ssd/tagged_trajectory_prediction_artifacts/2024_04_15_argoverse_processed/'
+dataroot='/mnt/ssd/training_data_trajectory_prediction/2024_04_24_argoverse_dataset_v2/'
 
 # List of scenario directories
 scenario_ids=(
-    "cad8bece-55c2-470b-ace0-a0ca5f4dcf81/"
-    "4a48d594-76ef-4c47-bbf1-48f1d165a25e/"
-    "edb4a899-ee6d-4b24-b521-76ad44fc21fc/"
-    "abbf06c4-f659-48ec-9965-178077161465/"
-    "1bf910db-0ff4-4d14-be49-114e3b1df7a5/"
-    "eb3d913c-3deb-40f3-94c4-b591157dda36/"
-    "f5c6441c-fd57-4f21-8c7b-8d55b74673b3/"
-    "5ffc0504-aa1b-4f84-aedf-064ae0d58aac/"
-    "9e593b3a-23b3-49c4-9d2e-55649328caa3/"
-    "d6961a3c-e5ff-43e5-9564-79c531b28215/"
-    "8124fcd2-0d7f-4a57-b876-8ba9bbba5afe/"
-    "71f93cdf-073c-4445-9e79-fb4df79fef3a/"
+    "021f25e2-08f6-4a43-ac82-ec2812ec7e7e/"
+    "35643b98-4086-4a8b-9ea4-0a1339059881/"
+    "689ba4fd-0596-4f23-841c-d9dfde7f557c/"
+    "34491a64-cc0c-42a9-b788-70320284ebc5/"
+    "01200e53-bdc9-4d12-b636-e073a94bc68e/"
+    "00e4d383-b7a8-4412-86df-575eb0ea9a28/"
+    "9ab6cb52-e211-4a5d-b6b6-6ac97cd66ee3/"
+    "cdc9d2d9-23e5-4b32-aed3-918b7fab16b9/"
+    "668e6666-8c2f-4a72-bab9-62e34f99fbdb/"
+    "333761a7-6557-447a-b95a-635e0bcbc1a0/"
+    "00078f90-71fa-454f-96ea-eef93c70d499/"
+    "9a598ff4-acf8-4cb2-afa1-61f9ffc6d9ea/"
 )
 
-output_dir='/home/haj3st/av2-api/results/focal_tracks_greater_25'
+output_dir='/home/haj3st/av2-api/results/300h'
 
 # Loop through the scenario directories
 for dir in "${scenario_ids[@]}"
